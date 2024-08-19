@@ -124,13 +124,13 @@ const createWindow = async () => {
   });
 
   mainWindow.webContents.on('did-finish-load', () => {
-    setTimeout(() => {
+    /*setTimeout(() => {
       if (loadingScreen) {
         loadingScreen.close();
       }
       mainWindow?.show();
       mainWindow?.focus();
-    }, 4000);
+    }, 4000);*/
   });
 
   mainWindow.loadURL('http://localhost:3000');
